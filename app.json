@@ -1,12 +1,37 @@
 {
     "pages": [
+        "pages/shopping/index",
+        "pages/product/index",
+        "pages/personal/index",
         "pages/index/index"
     ],
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "Weixin",
+        "navigationBarTitleText": "扫码购物",
         "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "text": "扫码购物",
+                "pagePath": "pages/shopping/index",
+                "iconPath": "assets/icon/bbt.png",
+                "selectedIconPath": "assets/icon/bbt-a.png"
+            },
+            {
+                "text": "商品列表",
+                "pagePath": "pages/product/index",
+                "iconPath": "assets/icon/hamburger.png",
+                "selectedIconPath": "assets/icon/hamburger-a.png"
+            },
+            {
+                "text": "个人中心",
+                "pagePath": "pages/personal/index",
+                "iconPath": "assets/icon/bread.png",
+                "selectedIconPath": "assets/icon/bread-a.png"
+            }
+        ]
     },
     "style": "v2",
     "sitemapLocation": "sitemap.json"
