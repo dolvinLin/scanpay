@@ -1,1 +1,30 @@
 /* pages/shopping/index.wxss */
+.shopping {
+  background: #f9f9f9;
+}
+
+.shopping .banner {
+  width: 750rpx;
+}
+
+.shopping .scan-code {
+  margin-top: 60rpx;
+  width: 260rpx;
+  height: 260rpx;
+  background: #f5ba47;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  border: 20rpx solid #fce9bc;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+}
+
+.shopping .scan-code image {
+  width: 120rpx;
+  height: 120rpx;
+}

@@ -1,2 +1,10 @@
 <!--pages/shopping/index.wxml-->
-<text>pages/shopping/index.wxml</text>
+<!-- <text>pages/shopping/index.wxml</text> -->
+<view class="shopping container">
+<image class="banner" src="../../assets/banenr.png" mode="widthFix"></image>
+    <view class="scan-code" bindtap="scanCode">
+        <image src="../../assets/icon/qrcode.png"></image>
+        <view>请扫描商品</view>
+        <view>条形码</view>
+    </view>
+</view>
