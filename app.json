@@ -4,13 +4,14 @@
     "pages/product/index",
     "pages/personal/index",
     "pages/cart/index",
+    "pages/order/index",
     "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "扫码购物",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#666",

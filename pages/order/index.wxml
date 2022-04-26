@@ -1,0 +1,47 @@
+<!--pages/order/index.wxml-->
+<!-- <text>pages/order/index.wxml</text> -->
+<view class="goods" wx:for="{{goodsList}}" wx:key="index">
+  <view class="price">￥{{item.price}}</view>
+  <view class="title">{{item.title}}</view>
+  <view class="num">×{{item.num}}</view>
+</view>
+<view class="more" wx:if="{{isMore}}">共2件商品 展开💦</view>
+<view class="balance wrap">
+  <view class="left">
+    <text>余额</text><text class="price">(￥{{balance}})</text>
+  </view>
+  <switch checked="{{isBalance}}" bindchange="switchBalance" />
+</view>
+<view class="goods-price wrap">
+  <text>商品金额</text>
+  <text class="price">￥{{computed.cart(goodsList,balance,isBalance).result}}</text>
+</view>
+<view class="discount wrap" wx:if="{{isBalance}}">
+  <text>余额折扣</text>
+  <text class="price">-{{balance}}</text>
+</view>
+<view class="tip">
+  <icon type="warn" size="22" color="#999"></icon><text>请支付完成后携带商品</text>
+</view>
+<view class="footer">
+  <view class="add">实际支付：<text class="price">￥{{computed.cart(goodsList,balance,isBalance).discountPrice}}</text></view>
+  <view class="pay">确认支付</view>
+</view>
+<wxs module="computed">
+  var cart = function (cart, balance, isBalance) {
+    var result = 0;
+    var discountPrice = 0;
+    cart.forEach(function (item) {
+      result += item.num * item.price;
+    });
+    if (isBalance) {
+      discountPrice = result - balance
+    } else {
+      discountPrice = result
+    }
+
+    result = result.toFixed(2);
+    return { result, discountPrice }
+  };
+  module.exports = { cart: cart };
+</wxs>

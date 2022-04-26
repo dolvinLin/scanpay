@@ -1,10 +1,42 @@
 /**app.wxss**/
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  /* padding: 200rpx 0; */
+/* 根元素样式 设置页面背景、字体大小、字体颜色，字符间距、长单词换行 */
+page {
+  /* 铺满全屏 */
+  height: 100vh;
+  background: #f9f9f9;
+  font-size: 28rpx;
   box-sizing: border-box;
-} 
+  color: #333;
+  letter-spacing: 0;
+  word-wrap: break-word;
+}
+
+/* 设置常用元素尺寸规则 */
+page,
+view,
+textarea,
+input,
+label,
+form,
+button {
+  box-sizing: border-box;
+}
+
+/* 按钮样式处理 */
+button {
+  font-size: 28rpx;
+}
+
+/* 取消按钮默认的阴影效果 */
+button::after {
+  border: none;
+}
+
+/* 设置图片默认样式，取消默认尺寸 */
+image {
+  display: block;
+  height: auto;
+  width: auto;
+}
+
+/* 以上是样式重置 */

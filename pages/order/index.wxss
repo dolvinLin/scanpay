@@ -1,0 +1,79 @@
+/* pages/order/index.wxss */
+page {
+  font-size: 32rpx;
+}
+
+.price {
+  color: #ff0000;
+  font-weight: 700;
+}
+
+.goods {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #e1e1e1;
+  background: #fff;
+  height: 200rpx;
+}
+
+.goods .title {
+  margin-bottom: 20rpx;
+}
+
+.goods .price {
+  float: right;
+}
+
+.goods .num {
+  text-align: right;
+}
+
+.more {
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #ffffff;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+  background: #fff;
+  height: 140rpx;
+  line-height: 140rpx;
+  padding: 0 20rpx;
+}
+
+.tip {
+  margin-top: 100rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #e1e1e1;
+  background: #ffffff;
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20rpx;
+}
+
+.footer > view {
+  flex: 2;
+}
+
+.footer .result {
+  font-size: 30rpx;
+}
+
+.footer .pay {
+  flex: 1;
+  color: #fff;
+  background: #ffa72b;
+  text-align: center;
+}
