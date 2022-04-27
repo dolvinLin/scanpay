@@ -5,6 +5,7 @@
     "pages/personal/index",
     "pages/cart/index",
     "pages/order/index",
+    "pages/success/index",
     "pages/index/index"
   ],
   "window": {

@@ -1,0 +1,81 @@
+/* pages/success/index.wxss */
+.top {
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #555555;
+  text-align: center;
+
+  .result {
+    image {
+      margin: 0 auto;
+      margin-bottom: 20rpx;
+      width: 100rpx;
+      height: 100rpx;
+    }
+  }
+
+  .backhome {
+    padding: 20rpx;
+    background: #f5ba47;
+    border-radius: 10rpx;
+    margin: 0 auto;
+    width: 200rpx;
+    color: #fff;
+  }
+}
+
+.recommend-list {
+  .title {
+    text-align: center;
+    border-bottom: 1rpx solid #cccccc;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 34rpx;
+
+    text {
+      color: #f00;
+    }
+  }
+
+  .content {
+    .recommend-card {
+      position: relative;
+      padding: 20rpx;
+      height: 540rpx;
+
+      image {
+        width: 710rpx;
+        height: 300rpx;
+      }
+
+      .goods-name {
+        margin-top: 10rpx;
+        color: #555;
+        font-size: 32rpx;
+      }
+
+      .price {
+        font-size: 36rpx;
+        margin: 10rpx 0;
+      }
+
+      .slogan {
+        font-size: 30rpx;
+        color: #555;
+      }
+
+      .tobuy {
+        position: absolute;
+        right: 20rpx;
+        bottom: 20rpx;
+        background: #f50;
+        color: #fff;
+        padding: 10rpx 20rpx;
+        border-radius: 10rpx;
+      }
+    }
+  }
+}

@@ -113,3 +113,25 @@
 .footer .action .add {
   background: #ffa72b;
 }
+
+.empty {
+  margin: 200rpx auto;
+  text-align: center;
+  font-size: 32rpx;
+  color: #555555;
+}
+
+.empty .img image {
+  margin: 0 auto;
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.empty .scancode {
+  padding: 20rpx;
+  background: #f5ba47;
+  border-radius: 10rpx;
+  margin: 0 auto;
+  width: 200rpx;
+  color: #fff;
+}

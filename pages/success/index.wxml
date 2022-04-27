@@ -1,0 +1,22 @@
+<view class="top">
+  <view class="result">
+    <image src="../../assets/img/face.png"></image>
+    <text>支付成功</text>
+  </view>
+  <navigator open-type="switchTab" url="/pages/shopping/index">
+    <view class="backhome">返回首页</view>
+  </navigator>
+</view>
+
+<view class="recommend-list">
+  <view class="title"><text>*</text>你可能喜欢<text>*</text> </view>
+  <view class="content">
+    <view class="recommend-card" wx:for="{{2}}" wx:key="index">
+      <image src="../../assets/img/00.png"></image>
+      <view class="goods-name">海南现摘芒果</view>
+      <view class="price">￥29.9</view>
+      <view class="slogan">销量2688件</view>
+      <view class="tobuy">立即购买</view>
+    </view>
+  </view>
+</view>

@@ -25,7 +25,7 @@
 </view>
 <view class="footer">
   <view class="add">实际支付：<text class="price">￥{{computed.cart(goodsList,balance,isBalance).discountPrice}}</text></view>
-  <view class="pay">确认支付</view>
+  <view class="pay" bindtap="handlePay">确认支付</view>
 </view>
 <wxs module="computed">
   var cart = function (cart, balance, isBalance) {

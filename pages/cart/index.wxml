@@ -1,22 +1,31 @@
-<view class="card" wx:for="{{ cart }}" wx:key="index">
-  <view class="title">{{item.title}}</view>
-  <view class="specification">{{ item.description||'规格：500ml/瓶'}}</view>
-  <view class="price">￥{{item.price}}</view>
-  <view class="stepper">
-    <view class="btn minus" bindtap="handleStpper" data-index="{{index}}" data-item="{{item}}" data-active="-"></view>
-    <input type="number" value="{{item.num}}" />
-    <view class="btn plus" bindtap="handleStpper" data-index="{{index}}" data-item="{{item}}" data-active="+"></view>
+<view class="cart" wx:if="{{ cart.length > 0 }}">
+  <view class="card" wx:for="{{ cart }}" wx:key="index">
+    <view class="title">{{item.title}}</view>
+    <view class="specification">{{ item.description||'规格：500ml/瓶'}}</view>
+    <view class="price">￥{{item.price}}</view>
+    <view class="stepper">
+      <view class="btn minus" bindtap="handleStpper" data-index="{{index}}" data-item="{{item}}" data-active="-"></view>
+      <input type="number" value="{{item.num}}" />
+      <view class="btn plus" bindtap="handleStpper" data-index="{{index}}" data-item="{{item}}" data-active="+"></view>
+    </view>
+  </view>
+  <view class="footer">
+    <view class="result">
+      <text>总计: </text>
+      <text class="price">￥{{computed.cart(cart).result}}</text>
+    </view>
+    <view class="action">
+      <view class="add" bindtap="handleScanCode">继续添加</view>
+      <view class="topay" bindtap="toPay">去结算({{computed.cart(cart).total}})</view>
+    </view>
   </view>
 </view>
-<view class="footer">
-  <view class="result">
-    <text>总计: </text>
-    <text class="price">￥{{computed.cart(cart).result}}</text>
+<view class="empty" wx:else>
+  <text>这里是空的</text>
+  <view class="img">
+    <image src="../../assets/img/cart.png"></image>
   </view>
-  <view class="action">
-    <view class="add" bindtap="handleScanCode">继续添加</view>
-    <view class="topay" bindtap="toPay">去结算({{computed.cart(cart).total}})</view>
-  </view>
+  <view class="scancode" bindtap="handleScanCode">扫一扫</view>
 </view>
 <wxs module="computed">
   var cart = function (cart) { var result = 0; var total = 0; cart.forEach(function (item) { total += item.num; result += item.num * item.price; }); result = result.toFixed(2); return { result, total } }; module.exports = { cart: cart };

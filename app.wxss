@@ -1,13 +1,19 @@
 /**app.wxss**/
 /* 根元素样式 设置页面背景、字体大小、字体颜色，字符间距、长单词换行 */
+.price {
+  color: #ff3333;
+  font-weight: bold;
+}
+
+.btn {}
+
 page {
   /* 铺满全屏 */
   height: 100vh;
   background: #f9f9f9;
+  color: #555555;
   font-size: 28rpx;
-  box-sizing: border-box;
-  color: #333;
-  letter-spacing: 0;
+  letter-spacing: 4rpx;
   word-wrap: break-word;
 }
 

@@ -1,36 +1,18 @@
-// pages/order/index.js
+// pages/success/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    goodsList: [],
-    balance: 4,
-    isBalance: true,
-    isMore: false
-  },
-  handlePay() {
-    wx.navigateTo({ url: '/pages/success/index',})
-  },
-  switchBalance(e) {
-    this.setData({
-      isBalance: e.detail.value
-    })
-  },
-  initGoodsList() {
-    // console.log(wx.getStorageSync('cart'));
-    const cart = wx.getStorageSync('cart') || ''
-    this.setData({
-      goodsList: cart
-    })
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    // this.initGoodsList()
+
   },
 
   /**
@@ -44,7 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-    this.initGoodsList()
+
   },
 
   /**
