@@ -1,15 +1,10 @@
 /* pages/cart/index.wxss */
-.price {
-  color: #fd2b2b;
-  font-weight: 700;
-}
-
 .card {
   position: relative;
   box-sizing: border-box;
   height: 230rpx;
   padding: 20rpx;
-  border-bottom: 1rpx solid #ccc;
+  border-bottom: 2rpx solid #cccccc;
 }
 
 .card .title {
@@ -19,7 +14,7 @@
 .card .specification {
   margin-bottom: 10rpx;
   font-size: 28rpx;
-  color: #555;
+  color: #555555;
 }
 
 .card .stepper {
@@ -33,7 +28,7 @@
   box-sizing: border-box;
   width: 140rpx;
   height: 80rpx;
-  border: 1rpx solid #ffa72b;
+  border: 2rpx solid #fdc000;
   border-radius: 40rpx;
   text-align: center;
   margin: 0 10rpx;
@@ -51,19 +46,19 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  background-color: #fff;
+  background-color: #ffffff;
   transform: translate(-50%, -50%);
   content: "";
 }
 
 .card .stepper .btn.minus {
-  border: 1rpx solid #ffa72b;
+  border: 2rpx solid #fdc000;
 }
 
 .card .stepper .btn.minus::before {
   height: 4rpx;
   width: 50%;
-  background-color: #ffa72b;
+  background-color: #fdc000;
 }
 
 .card .stepper .btn.plus {
@@ -78,14 +73,14 @@
 .card .stepper .btn.plus::after {
   height: 4rpx;
   width: 50%;
-  color: #ffa72b;
+  color: #fdc000;
 }
 
 .footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  border-top: 1px solid #e1e1e1;
+  border-top: 2px solid #cccccc;
 }
 
 .footer .result {
@@ -97,7 +92,7 @@
 
 .footer .action {
   background: #ff0000;
-  color: #fff;
+  color: #ffffff;
   height: 100rpx;
   line-height: 100rpx;
   font-size: 40rpx;
@@ -133,5 +128,5 @@
   border-radius: 10rpx;
   margin: 0 auto;
   width: 200rpx;
-  color: #fff;
+  color: #ffffff;
 }

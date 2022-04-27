@@ -1,1 +1,48 @@
 /* pages/personal/index.wxss */
+.top {
+  height: 200rpx;
+  background-image: linear-gradient(#f1b746, #fae7b9);
+  display: flex;
+  align-items: center;
+}
+
+.top .avatar image {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 64rpx;
+  margin: 0 30rpx;
+}
+
+.top .info {
+  font-size: 32rpx;
+}
+
+.top .info .name {
+  margin-bottom: 20rpx;
+  font-weight: bold;
+}
+
+.action-group {
+  margin: 20rpx 0;
+}
+
+.action + .action {
+  margin-top: 2rpx;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  padding: 27rpx;
+  background: #ffffff;
+}
+
+.action image {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 20rpx;
+}
+
+.action text {
+  font-size: 32rpx;
+}

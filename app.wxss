@@ -13,7 +13,7 @@ page {
   background: #f9f9f9;
   color: #555555;
   font-size: 28rpx;
-  letter-spacing: 4rpx;
+  letter-spacing: 2rpx;
   word-wrap: break-word;
 }
 

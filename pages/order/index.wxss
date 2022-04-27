@@ -3,14 +3,9 @@ page {
   font-size: 32rpx;
 }
 
-.price {
-  color: #ff0000;
-  font-weight: 700;
-}
-
 .goods {
   padding: 20rpx;
-  border-bottom: 1rpx solid #e1e1e1;
+  border-bottom: 2rpx solid #e1e1e1;
   background: #fff;
   height: 200rpx;
 }
@@ -54,7 +49,7 @@ page {
   position: fixed;
   bottom: 0;
   width: 100%;
-  border-top: 1px solid #e1e1e1;
+  border-top: 2px solid #e1e1e1;
   background: #ffffff;
   height: 100rpx;
   line-height: 100rpx;
@@ -73,7 +68,7 @@ page {
 
 .footer .pay {
   flex: 1;
-  color: #fff;
+  color: #ffffff;
   background: #ffa72b;
   text-align: center;
 }

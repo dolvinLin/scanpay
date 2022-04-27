@@ -29,6 +29,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "个人",
+          "pathName": "pages/personal/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

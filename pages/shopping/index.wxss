@@ -8,8 +8,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #f5ba47;
-  color: #fff;
+  background: #fdc000;
+  color: #ffffff;
   margin: 60rpx auto;
   width: 260rpx;
   height: 260rpx;
